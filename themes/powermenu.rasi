@@ -1,0 +1,36 @@
+*	{
+	background-color: Black;
+	text-color: White;
+}
+
+window {
+	border: 2px;
+	border-color: Magenta;
+	border-radius: 7px;
+	height: 100px;
+	padding: 20px;
+	width: 400px;
+}
+
+listview {
+	columns: 5;
+}
+
+element {
+	border: 0px 0px 5px;
+	border-color: Blue;
+	border-radius: 0px;
+	margin: 3px;
+	position: center;
+}
+element-text {
+	font: "Hack Nerd Font Bold 30px";
+	padding: 3px 21px;
+}
+element-text selected {
+	background-color: Blue;
+}
+
+box, case-indicator, element-icon, entry, prompt, num-rows num-filtered-rows, textbox-current-entry, icon-current-entry, inputbar{
+	enabled: false;
+}

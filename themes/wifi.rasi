@@ -1,0 +1,47 @@
+* {
+	background-color: black;
+  font: "Hack Nerd Font 9"; 
+	text-color: lavender;
+	cursor: pointer;
+}
+
+window {
+	border: 1px;
+	border-color: magenta;
+	border-radius: 10px;
+	height: 200px;
+	x-offset: 588px;
+	y-offset: -240px;
+	width: 165px;
+}
+
+element-text {
+	padding: 0px 10px;
+}
+
+element-text selected {
+	background-color: blue;
+}
+
+inputbar {
+	background-color: #262626;
+	border-radius: 5px;
+	margin: 10px 10px 8px 10px;
+	children: [ "textbox-prompt-colon", "entry" ];
+	padding: 2px 5px;
+}
+
+textbox-prompt-colon {
+    expand:                      false;
+    str:                         "SSID:";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+
+entry {
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
+}

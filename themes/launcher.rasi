@@ -1,0 +1,154 @@
+configuration { 
+  modi:                        "drun,run"; 
+  show-icons:                  true; 
+  display-drun:                "Application"; 
+  display-run:                 "Command"; 
+}   
+ 
+* { 
+  font:                        "Gentium Book Plus 12"; 
+  background:                  Black;
+  border:                      Magenta;
+  text:                        White;
+  selected:                    Blue;
+} 
+ 
+window { 
+  anchor:                      center; 
+  background-color:            @background; 
+  border:                      2px;
+  border-color:                @border;
+  border-radius:               15px; 
+  cursor:                      "default"; 
+  enabled:                     true; 
+  fullscreen:                  false; 
+  location:                    center; 
+  transparency:                "real"; 
+  width:                       1000px; 
+  x-offset:                    0px; 
+  y-offset:                    0px; 
+} 
+ 
+mainbox { 
+  background-color:            transparent; 
+  children:                    [ "imagebox", "listbox" ]; 
+  enabled:                     true; 
+  orientation:                 horizontal; 
+  spacing:                     0px; 
+} 
+ 
+imagebox { 
+  background-color:            transparent; 
+  background-image:            url("~/SourceCode/rofi-emc-theme/images/female_assassin.jpeg", height); 
+  children:                    [ "inputbar", "mode-switcher" ]; 
+  orientation:                 vertical; 
+  padding:                     20px; 
+  spacing:                     360px;
+} 
+ 
+listbox { 
+  background-color:            transparent; 
+  children:                    [ "message", "listview" ]; 
+  orientation:                 vertical; 
+  padding:                     20px; 
+  spacing:                     20px; 
+} 
+ 
+inputbar { 
+  background-color:            @background; 
+  border:                      1px;
+  border-color:                @border;
+  border-radius:               10px; 
+  children:                    [ "entry" ]; 
+  enabled:                     true; 
+  padding:                     10px;
+  spacing:                     10px; 
+  text-color:                  @text; 
+} 
+
+entry { 
+  background-color:            inherit; 
+  cursor:                      text; 
+  enabled:                     true; 
+  placeholder:                 "Search"; 
+  placeholder-color:           inherit; 
+  text-color:                  @text; 
+} 
+ 
+mode-switcher{ 
+  background-color:            transparent; 
+  enabled:                     true; 
+  spacing:                     20px; 
+  text-color:                  @text; 
+} 
+
+button { 
+  background-color:            @background; 
+  border:                      1px;
+  border-color:                @border;
+  border-radius:               10px; 
+  cursor:                      pointer; 
+  padding:                     5px;
+  text-color:                  inherit; 
+} 
+
+button selected { 
+  background-color:            @selected; 
+  text-color:                  @text; 
+} 
+ 
+listview { 
+  background-color:            transparent; 
+  columns:                     1; 
+  cursor:                      "default"; 
+  cycle:                       true; 
+  dynamic:                     true; 
+  enabled:                     true; 
+  fixed-height:                true; 
+  fixed-columns:               true; 
+  layout:                      vertical; 
+  lines:                       8; 
+  reverse:                     false; 
+  scrollbar:                   false; 
+  spacing:                     10px; 
+  text-color:                  @border; 
+} 
+ 
+element { 
+  background-color:            transparent; 
+  border-radius:               10px; 
+  cursor:                      pointer; 
+  enabled:                     true; 
+  padding:                     8px; 
+  spacing:                     15px;  
+  text-color:                  @text;  
+}        
+
+element selected {     
+  background-color:            @selected; 
+  text-color:                  @text;
+}     
+
+element-icon {  
+ background-color:            transparent; 
+ cursor:                      inherit; 
+ size:                        32px; 
+ text-color:                  inherit; 
+} 
+
+element-text { 
+ background-color:            transparent; 
+ cursor:                      inherit; 
+ horizontal-align:            0.0; 
+ text-color:                  inherit; 
+ vertical-align:              0.5; 
+} 
+ 
+textbox { 
+ padding:                     15px; 
+ border-radius:               10px; 
+ background-color:            @background; 
+ text-color:                  @border; 
+ vertical-align:              0.5; 
+ horizontal-align:            0.0; 
+} 
