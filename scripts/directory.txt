@@ -1,11 +1,13 @@
 Terminal;alacritty
-SourceCode;alacritty -e ranger --choosedir= ~/SourceCode/
-Dotfiles;alacritty -e ranger --choosedir= ~/.config/
-Cmus;alacritty -e cmus
-User;alacritty -e ranger
-Root;alacritty -e sudo ranger --choosedir= /
-Documents;alacritty -e ranger --choosedir= ~/Documents/
+Applications;alacritty -e ranger --choosedir= ~/Applications/
+Desktop;alacritty -e ranger --choosedir= ~/Desktop/
+Documents;alacritty -e ranger --choosedir= ~/Documents/ 
 Downloads;alacritty -e ranger --choosedir= ~/Downloads/
 Music;alacritty -e ranger --choosedir= ~/Music/
 Pictures;alacritty -e ranger --choosedir= ~/Pictures/
+SourceCode;alacritty -e ranger --choosedir= ~/SourceCode/
+Templates;alacritty -e ranger --choosedir= ~/Templates/
 Videos;alacritty -e ranger --choosedir= ~/Videos/
+User;alacritty -e ranger
+Root;alacritty -e sudo ranger --choosedir= /
+Dotfiles;alacritty -e ranger --choosedir= ~/.config/

@@ -25,4 +25,4 @@ Bitly;thorium-browser bitly.com/ && moveFocus
 NerdIcon;thorium-browser nerdfonts.com//cheat-sheet && moveFocus
 DeepAI;thorium-browser deepai.org/ && moveFocus
 Zoom;thorium-browser app.zoom.us/ && moveFocus
-Localhost;port=$(echo | rofi -dmenu -theme ~/SourceCode/Rofi/Emc/Themes/port.rasi) && thorium-browser "127.0.0.1:$port/"  && moveFocus
+Localhost;port=$(echo | rofi -dmenu -theme ~/SourceCode/rofi-emc-theme/themes/port.rasi) && thorium-browser "http://localhost:$port/"  && moveFocus

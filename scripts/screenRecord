@@ -1,0 +1,4 @@
+#!/bin/bash
+
+typeSource="$(pactl list sources short | awk '{split($2, a, "."); print a[1]}' | rofi -dmenu -theme $HOME/SourceCode/rofi-emc-theme/themes/screenrecord.rasi)"
+sed -i "s/^audio_pulseaudio_source=.*/audio_pulseaudio_source=$typeSource/" .ssr/settings.conf
